@@ -17,7 +17,7 @@
 ### 実行方法
 - Test.exe ファイルを実行してください。
 - Windows 環境であれば動作すると思います。
-- Ayame の情報を test.cofig に記述し、実行ファイルと同じフォルダに置く必要があります。（詳細は別途）
+- Ayame の情報を test.config に記述し、実行ファイルと同じフォルダに置く必要があります。（詳細は別途）
 - 実行時に mrwebrtc.dll のロード失敗のようなエラーが出た場合は、実行ファイル (Test.exe) と同じフォルダに mrwebrtc.dll をコピーしてください。mrwebrtc.dll は、プロジェクトのbinフォルダのずっと下、runtimes/winXX-XXX/native の下あたりにあります。
 
 ### 操作方法
