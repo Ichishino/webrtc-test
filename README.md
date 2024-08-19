@@ -2,7 +2,8 @@
 
 - WebRTCを使ったGUIアプリです。1対1の双方向の映像通信が行えます。
 - 映像のみです、音声はありません。
-- STUN/TURN/シグナリングサーバーは、テスト用として [Ayame](https://ayame-labo.shiguredo.app/) を使用しております。
+- シグナリングサーバーは [Ayame](https://github.com/OpenAyame/ayame) を使用しております。
+- Windows用です。
 
 ### 開発環境
 - Windows 11
@@ -15,10 +16,11 @@
 - Windows環境で、Visual Studio を使って行ってください。
 
 ### 実行方法
-- Test.exe ファイルを実行してください。
-- Windows 環境であれば動作すると思います。
-- Ayame の情報を test.config に記述し、実行ファイルと同じフォルダに置く必要があります。（詳細は別途）
-- 実行時に mrwebrtc.dll のロード失敗のようなエラーが出た場合は、実行ファイル (Test.exe) と同じフォルダに mrwebrtc.dll をコピーしてください。mrwebrtc.dll は、プロジェクトのbinフォルダのずっと下、runtimes/winXX-XXX/native の下あたりにあります。
+- Windows 環境のみで実行できます。
+- Ayame の情報を test.config に記述し、実行ファイル（Test.exe）と同じフォルダに置く必要があります。（詳細は別途）
+- 起動は、Test.exe ファイルを実行してください。
+- STUN/TURN/シグナリングサーバーは、[Ayame Labo](https://ayame-labo.shiguredo.app/) を使用すると、自前で用意しなくてもすぐに動作の確認が行えます。
+- 「カメラに接続できない」、「mrwebrtc.dllのロード失敗」など、起こった場合、実行ファイル (Test.exe) と同じフォルダに mrwebrtc.dll をコピーしてください。mrwebrtc.dll は、このプロジェクトのbinフォルダのずっと下、runtimes/winXX-XXX/native の下あたりに自動的につくられます。特にWindows11環境でこのエラーは起こります。
 
 ### 操作方法
 - 「送受信」「送信のみ」「受信のみ」のどれかを選んで、「開始」ボタンを押してください。
@@ -28,3 +30,5 @@
 - 自分と相手で、このアプリをそれぞれ起動するとき、先に「開始」したアプリの映像が送信されない場合があります。
 (Answer時のSDPデータが、a=inactiveになってしまう)
 - 後から「開始」したアプリの映像送信はうまくいきます。
+
+### 以上
