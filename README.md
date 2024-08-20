@@ -5,7 +5,7 @@
 - シグナリングサーバーは [Ayame](https://github.com/OpenAyame/ayame) を使用しております。
 - Windows用です。
 
-![image](screen.png)
+<img src="screen.png" width="400">
 
 ### 開発環境
 - Windows 11
