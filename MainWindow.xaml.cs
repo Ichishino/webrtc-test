@@ -137,8 +137,8 @@ namespace Test
             _refreshTimer.Stop();
             _fpsTimer.Stop();
 
-            this.LocalFps.Text = "FPS 0";
-            this.RemoteFps.Text = "FPS 0";
+            this.LocalFps.Text = "0";
+            this.RemoteFps.Text = "0";
 
             this.LocalImage.Source = null;
             this.RemoteImage.Source = null;
@@ -195,10 +195,10 @@ namespace Test
 
         private void OnFpsTimer(object? sender, EventArgs e)
         {
-            this.LocalFps.Text = "FPS " + _localFpsCounter.ToString();
+            this.LocalFps.Text = _localFpsCounter.ToString();
             _localFpsCounter = 0;
 
-            this.RemoteFps.Text = "FPS " + _remoteFpsCounter.ToString();
+            this.RemoteFps.Text = _remoteFpsCounter.ToString();
             _remoteFpsCounter = 0;
         }
 

@@ -24,7 +24,10 @@
                     <Border BorderBrush="Black" BorderThickness="1">                    
                         <Image Name="LocalImage" Width="400" Height="300"/>
                     </Border>
-                    <TextBlock Name="LocalFps" FontSize="16" Text="FPS 0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16" Text="FPS "/>
+                        <TextBlock Name="LocalFps" FontSize="16" Text="0"/>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
                     <StackPanel Orientation="Horizontal">
@@ -34,7 +37,10 @@
                     <Border BorderBrush="Black" BorderThickness="1">
                         <Image Name="RemoteImage" Width="400" Height="300"/>
                     </Border>
-                    <TextBlock Name="RemoteFps" FontSize="16" Text="FPS 0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="16" Text="FPS "/>
+                        <TextBlock Name="RemoteFps" FontSize="16" Text="0"/>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
