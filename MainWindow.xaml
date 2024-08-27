@@ -27,6 +27,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontSize="16" Text="FPS "/>
                         <TextBlock Name="LocalFps" FontSize="16" Text="0"/>
+                        <TextBlock Name="LocalResolution" FontSize="16" Text="" Margin="10,0,0,0"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Orientation="Vertical">
@@ -40,6 +41,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontSize="16" Text="FPS "/>
                         <TextBlock Name="RemoteFps" FontSize="16" Text="0"/>
+                        <TextBlock Name="RemoteResolution" FontSize="16" Text="" Margin="10,0,0,0"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

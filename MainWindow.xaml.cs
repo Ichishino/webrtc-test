@@ -139,6 +139,8 @@ namespace Test
 
             this.LocalFps.Text = "0";
             this.RemoteFps.Text = "0";
+            this.LocalResolution.Text = "";
+            this.RemoteResolution.Text = "";
 
             this.LocalImage.Source = null;
             this.RemoteImage.Source = null;
@@ -177,6 +179,9 @@ namespace Test
             {
                 this.LocalImage.Source = localImage;
                 _localFpsCounter++;
+
+                this.LocalResolution.Text =
+                    localImage.Width.ToString() + "x" + localImage.Height.ToString();
             }
 
             var remoteImage = _webrtcController.GetRemoteImage();
@@ -190,6 +195,9 @@ namespace Test
  
                 this.RemoteImage.Source = remoteImage;
                 _remoteFpsCounter++;
+
+                this.RemoteResolution.Text =
+                    remoteImage.Width.ToString() + "x" + remoteImage.Height.ToString();
             }
         }
 
